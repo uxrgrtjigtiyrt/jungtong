@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+  <style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .garo{
+        text-align:center;
+        height:1%;
+        width:2%;
+        border:1px solid black;
+        border-radius: 10px;
+        background-color:brown;
+        color:white;
+    }
+    .blankgaro{
+        height:1%;
+        width:1%;
+    }
+    .sero{
+        color:white;
+        text-align:center;
+        height:1%;
+        width:1%;
+        border:1px solid black;
+        border-radius: 10px;
+        background-color:brown;
+    }
+	#main{
+		position: absolute;
+        width:100vw;
+        align-content: center;
+        justify-content: center;
+	}
+	#inputName{
+		position:absolute;
+		width:100vw;
+        visibility:hidden;
+        background-color:palegoldenrod;
+        height:100vh;
+	}
+	#result{
+        position:absolute;
+        display:flex;
+        justify-content: center;
+		width:100vw;
+		visibility:hidden;
+        height:100vh;
+        background-color:palegoldenrod
+    }
+    #result *{
+        text-align: center;
+    }
+    .button{
+       width:100%;
+    }
+    .buttontd{
+        overflow:hidden;
+        width:1%;
+    }
+	body{
+        width:100vw;
+        height:100vh;
+        background-color:palegoldenrod;
+    }
+    #resultnum{
+        position:absolute;
+        height:10vh;
+        z-index: 1000;
+        color:black;
+        width:10vw;
+        left:49%;
+        top:90%;
+        font-size:50px;
+    }
+
+  </style>
+  <script src="sadari.js"></script>
+ </head>
+ <body>
+	<div id="main">	
+		<h3>사다리 게임</h3>
+		참가할 인원: <input type="text" id="num"/><br>
+		<input type="button" id="ok" value="확인"/>
+	</div>	
+	<div id="inputName">	
+		<p id="show"></p>
+		<input type="button" id="start" value="사다리타기"/>
+	</div>
+	<div id="result">	
+		<p id="shResult"></p>
+    </div>
+    <div id="resultnum"></div>
+
+
+	
+ </body>
+</html>

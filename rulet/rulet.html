@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rulet</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="rulet.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="button" style="z-index: 1000;">
+        <button class="button" onclick="minus()">-</button>
+        <input autofocus type="text" onkeyup="checkenter()" class="input">
+        <button class="button" onclick="plus()">+</button>
+      </div>
+        <div class="choose"></div>
+        <div class="result"></div>
+      <div class="roullete">
+      </div>
+      <button class="trigger" style="z-index: 100000;">뽑기</button>
+    </div>
+    
+
+    <script src="rulet.js"></script>
+  </body>
+</html>
