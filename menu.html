@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            height:95.7vh;
+            width:100%;
+            margin:0;
+        }
+        #topMenu {          
+                display:flex;
+                width: 100%;
+                justify-content: center;
+        }
+        #topMenu ul li {       
+                list-style: none;    
+                color: white;  
+                background-color: #2d2d2d; 
+                float: left;          
+                line-height: 30px;  
+                vertical-align: middle;
+                text-align: center;   
+        }
+        #topMenu .menuLink {                         
+                text-decoration:none;                   
+                color: black;                 
+                display: block;                  
+                width: 30vw;                    
+                font-size: 12px;
+                height:4vh;    
+                border:3px dotted black;          
+        }
+        #topMenu .menuLink:hover {       
+                background-color: #dddddd;
+        }
+        section{
+            height:100%;
+        }
+        #s{
+            background-color: palegoldenrod;
+        }
+        #r{
+            background-color:dodgerblue;
+        }
+        #i{
+            background-color:aqua
+        }
+        .iframe{
+            overflow:hidden;
+        }
+</style>
+</head>
+<body>
+    <nav id="topMenu" >
+        <ul>
+                <li><a id="s" class="menuLink" href="./ladder/sadari.html" target="iframe">사다리게임</a></li>
+                <li><a id="r" class="menuLink" href="./rulet/rulet.html" target="iframe">룰렛</a></li>
+                <li><a id="i" class="menuLink" href="./set/home.html" target="iframe">자리배치</a></li>
+        </ul>
+        
+</nav>
+<section id="section">
+        <iframe name="iframe" class="iframe" frameborder="0" width="100%" height="100%"></iframe>
+</section>
+</body>
+</html>
