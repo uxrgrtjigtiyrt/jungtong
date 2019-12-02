@@ -41,6 +41,9 @@
 				show1+="<tr>";
 				for(var j=0; j<num; j++){
 					arra[j]=parseInt(Math.random()*2);
+					if(i==19){
+						arra[j]=0;
+					}
 					show1+="<td class='sero'>|</td>";
 					idNum++;
 					if(j!=num-1){
